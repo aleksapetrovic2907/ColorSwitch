@@ -21,6 +21,7 @@ namespace ColorSwitch.Player
         {
             if (_input.jumpInput)
             {
+                _rigidbody2D.simulated = true;
                 _rigidbody2D.velocity = Vector2.up * _yVelocity;
             }
         }
